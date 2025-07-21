@@ -28,10 +28,10 @@ async function run() {
     const reviewsCollection = db.collection("Reviews");
 
     // Get All Services Collection
-    // app.get("/services", async (req, res) => {
-    //   const services = await servicesCollection.find().toArray();
-    //   res.send(services);
-    // });
+    app.get("/services", async (req, res) => {
+      const services = await servicesCollection.find().toArray();
+      res.send(services);
+    });
     
     // Get All Reviews Collection
     // app.get("/reviews", async (req, res) => {
